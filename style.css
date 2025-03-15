@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+.container {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  min-height: 50vh;
+  width: 55vh;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input {
+  border: 1px solid lightgray;
+  height: 3rem;
+  padding-left: 1rem;
+  background-color: #f9f9f9;
+  margin-bottom: 1.5rem; /* Added margin to separate input field */
+}
+
+form input:focus {
+  border-color: #af4d98;
+  box-shadow: 0 0 8px rgba(175, 77, 152, 0.3);
+}
+
+input::placeholder {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem; /* Adjusted margin */
+  position: relative;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+  color: #af4d98;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown i:hover {
+  color: #8a3a6f;
+}
+
+.from,
+.to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%; /* Adjusted width for better spacing */
+}
+
+.from p,
+.to p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid lightgray;
+  background-color: #f9f9f9;
+  padding: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.select-container:hover {
+  border-color: #af4d98;
+  box-shadow: 0 0 8px rgba(175, 77, 152, 0.3);
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 0.5rem; /* Added margin for better spacing */
+}
+
+.msg {
+  margin: 2rem 0 1rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+form button {
+  height: 3rem;
+  background-color: #af4d98;
+  color: #fff;
+  font-size: 1.15rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: 1rem; /* Added margin to separate button */
+}
+
+form button:hover {
+  background-color: #8a3a6f;
+  transform: translateY(-2px);
+}
+
+form button:active {
+  transform: translateY(0);
+}
