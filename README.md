@@ -5,4 +5,4 @@ Automatic Conversion: Converts currencies automatically when the user changes th
 
 Error Handling: Displays clear error messages for invalid inputs or API failures.
 
-Default Values: Pre-selects popular currencies (USD to INR) for quick usage.
+Real-Time Exchange Rates: Fetches up-to-date currency exchange rates from a reliable API.
